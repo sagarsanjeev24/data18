@@ -17,11 +17,11 @@ def ner():
     output_file = '/home/rockerzsag24/Data18/1.txt'
     input = open('/home/rockerzsag24/Data18/2018one.txt', 'r').read()
     input = input.replace('\t', '\n')
-    input = input.split('')
+    input = input.split('News')
     input = list(map(lambda s: s.strip(), input))
     i = 0
     for article in input:
-        output_file = '/home/rockerzsag24/Ready/27/News18_' + str(i) + '.json'
+        output_file = '/home/rockerzsag24/Data18/1/News18_' + str(i) + '.json'
         if article:
             try:
                 article_triplet = article.split('|', 3)
